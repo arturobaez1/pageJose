@@ -218,7 +218,7 @@ Start Close*/
     text-align: justify;
     margin: 20px 5px;
     border: solid 1px var(--lifecolor);
-    background-image: url('assets/ciencia.jpg');
+    background-image: url('assets/scienceLab.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
