@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    --main-color: #000A1A;
+    --gray: #e6ebf2;
+    --cta: #d82525;
+    --lifecolor: #003788;
+    --whatsapp: #41d32a;
+}
+
+
+/*Start Header*/
+
+.header {
+    background-image: url('assets/bannervert.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.banner-text {
+    width: 40%;
+    padding: 10px;
+    background-color: rgba(230, 235, 242, .1);
+    color: var(--main-color);
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 5em;
+    text-shadow: #E6E6E6 3px 3px;
+}
+
+.banner-text h2 {
+    font-size: 2.5em;
+    text-shadow: #E6E6E6 3px 3px;
+}
+
+.shop-button {
+    display: block;
+    width: 50%;
+    margin: 40px auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: var(--cta);
+    border-radius: 10px;
+}
+
+
+/*End Header
+
+
+Start Info cards*/
+
+.card {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: var(--lifecolor);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-1 {
+    background-image: url("assets/science.png");
+}
+
+.card-2 {
+    background-image: url("assets/science2.png");
+}
+
+.card-3 {
+    background-image: url("assets/science4.png");
+}
+
+.card-4 {
+    background-image: url("assets/science5.png");
+}
+
+
+/* End Info cards
+
+Start Products*/
+
+.payu {
+    max-width: 100%;
+}
+
+.products {
+    border: solid 1px var(--lifecolor);
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.products h2 {
+    background-color: var(--lifecolor);
+    padding: 10px;
+    color: white;
+}
+
+.product-card {
+    border: solid 1px var(--gray);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-card .sale {
+    background-color: var(--cta);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-card .product-title {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.product-card .price {
+    color: var(--cta);
+    font-size: 2em;
+    margin: 10px;
+}
+
+.product-card .price .price-tag {
+    text-decoration: line-through;
+}
+
+.product-card .sale-price {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.product-card .shop-button {
+    margin: 10px auto;
+}
+
+.buy-button {
+    display: block;
+    width: 50%;
+    margin: 40px auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: var(--lifecolor);
+    border-radius: 10px;
+}
+
+.contact-button {
+    display: block;
+    width: 70%;
+    margin: 40px auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px 5px 35px;
+    background-color: var(--whatsapp);
+    border-radius: 10px;
+    background-image: url('assets/Whatsapp1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact-button img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+
+/* End Products
+
+Start Join Information*/
+
+.join {
+    background-image: url('assets/Beneficios.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+}
+
+.join h3 {
+    text-align: center;
+}
+
+.join-text {
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(230, 235, 242, .5);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.join li {
+    margin-top: 20px;
+}
+
+
+/* End Join Information
+
+Start Close*/
+
+.close {
+    padding: 10px;
+    text-align: justify;
+    margin: 20px 5px;
+    border: solid 1px var(--lifecolor);
+    background-image: url('assets/ciencia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.close h4 {
+    background-color: rgba(230, 235, 242, .85);
+    padding: 10px;
+}
+
+.close img {
+    max-width: 100%;
+}
+
+
+/* End Close
+
+Start Footer*/
+
+footer {
+    text-align: center;
+    margin: 50px 5px 10px 5px;
+    border: solid 1px var(--lifecolor);
+    background-color: rgba(0, 55, 136, .2);
+}
+
+footer img {
+    max-width: 100%;
+}
+
+footer .buy-button {
+    margin: 0 auto;
+}
+
+footer small {
+    font-weight: bold;
+}
+
+
+/* End Footer
+
+Whatsapp Icon*/
+
+.whatsapp {
+    position: fixed;
+    bottom: 0px;
+    right: 80px;
+    max-width: 30px;
+    z-index: 100;
+}
+
+.whatsapp img {
+    max-width: 50px;
+}
