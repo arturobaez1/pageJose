@@ -57,6 +57,10 @@ body {
 
 Start Info cards*/
 
+.info {
+    margin: 40px auto;
+}
+
 .card {
     padding: 10px;
     margin-top: 20px;
@@ -95,7 +99,7 @@ Start Products*/
 .products {
     border: solid 1px var(--lifecolor);
     padding: 10px;
-    margin: 5px;
+    margin: 40px 5px;
     text-align: center;
 }
 
@@ -109,6 +113,7 @@ Start Products*/
     border: solid 1px var(--gray);
     margin-bottom: 30px;
     position: relative;
+    padding: 2%;
 }
 
 .product-card img {
@@ -144,8 +149,15 @@ Start Products*/
     margin: 10px;
 }
 
+.product-card .product-description {
+    margin-bottom: 70px;
+}
+
 .product-card .shop-button {
-    margin: 10px auto;
+    position: absolute;
+    margin: 0;
+    bottom: 5%;
+    left: 20%;
 }
 
 .buy-button {
@@ -248,12 +260,24 @@ footer img {
     max-width: 100%;
 }
 
+footer h3 {
+    font-weight: bold;
+    font-size: 3em;
+    margin: 10px;
+}
+
+footer h4 {
+    font-size: 1.5em;
+}
+
 footer .buy-button {
-    margin: 0 auto;
+    margin: 0 auto 10px;
+    padding: 20px 10px;
 }
 
 footer small {
     font-weight: bold;
+    padding: 1%;
 }
 
 
@@ -271,4 +295,84 @@ Whatsapp Icon*/
 
 .whatsapp img {
     max-width: 50px;
+}
+
+
+/* End Whatsapp Icon
+
+Start Tablet view */
+
+@media screen and (min-width: 767px) {
+    .main-container {
+        margin: 0 10px;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .product-promotion,
+    .product-transfer,
+    .product-targeted,
+    .product-wellness,
+    .product-transform,
+    .product-nutrition {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .logo-association {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* End Tablet View
+
+Start Laptop View*/
+
+@media screen and (min-width: 1023px) {
+    .header {
+        background-image: url('assets/banner1.png');
+        position: relative;
+    }
+    .banner-text {
+        width: 50%
+    }
+    .banner-text h1 {
+        font-size: 8em;
+        margin: 10px auto;
+    }
+    .banner-text h2 {
+        font-size: 4em;
+        margin: 20px auto;
+    }
+    header .shop-button {
+        position: absolute;
+        bottom: 20px;
+        left: 25%;
+    }
+    .main-container {
+        margin: 0 3%;
+    }
+    .product-promotion,
+    .product-transfer,
+    .product-targeted,
+    .product-wellness {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .join {
+        background-image: url('assets/beneficios-large.png');
+    }
+    .close {
+        background-size: auto;
+        background-repeat: round;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
 }
