@@ -6,7 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4Life</title>
     <link rel="icon" href="assets/4life-logo.svg">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            --main-color: #000A1A;
+            --gray: #636363;
+            --cta: #d82525;
+            --lifecolor: #003788;
+            --whatsapp: #41d32a
+        }
+        
+        .header {
+            background-image: url('assets/bannervert.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            max-width: 100vw
+        }
+        
+        .banner-text {
+            width: 40%;
+            padding: 10px;
+            background-color: rgba(230, 235, 242, .1);
+            color: var(--main-color);
+            text-align: center
+        }
+        
+        .banner-text h1 {
+            font-size: 5em;
+            text-shadow: #E6E6E6 3px 3px
+        }
+        
+        .banner-text h2 {
+            font-size: 2.5em;
+            text-shadow: #E6E6E6 3px 3px
+        }
+        
+        .shop-button {
+            display: block;
+            width: 50%;
+            margin: 40px auto;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px 20px;
+            background-color: var(--cta);
+            border-radius: 10px
+        }
+        
+        .whatsapp {
+            position: fixed;
+            bottom: 0px;
+            right: 80px;
+            max-width: 30px;
+            z-index: 100
+        }
+        
+        .whatsapp img {
+            max-width: 50px
+        }
+        
+        @media screen and (min-width:1023px) {
+            .header {
+                background-image: url('assets/banner1.png');
+                position: relative
+            }
+            .banner-text {
+                width: 50%
+            }
+            .banner-text h1 {
+                font-size: 8em;
+                margin: 10px auto
+            }
+            .banner-text h2 {
+                font-size: 4em;
+                margin: 20px auto
+            }
+            header .shop-button {
+                position: absolute;
+                bottom: 20px;
+                left: 25%
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -607,6 +692,7 @@
         </figure>
     </div>
 
+    <link rel="stylesheet" href="style.css">
 </body>
 
 </html>
